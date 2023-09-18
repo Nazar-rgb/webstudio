@@ -43,6 +43,14 @@
     width: 1px !important;
     overflow: hidden;
   }
+
+  .container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   
   /* Хедер */
   .header{
@@ -83,10 +91,10 @@
       
   /* Герой */
   .hero {
+    
     background-color: #2f303a;
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 1600px;
    
   }
   
