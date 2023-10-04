@@ -27,6 +27,7 @@ h6,
 ul,
 p {
   margin: 0px;
+  padding: 0px;
 }
 
 address {
@@ -99,6 +100,11 @@ address {
   letter-spacing: 0.28px;
 }
 
+.menu-link:hover,
+.menu-link:focus{
+  color: var(--accent-color);
+}
+
 .header-addres {
   margin-left: 344px;
   padding-top: 32px;
@@ -138,7 +144,8 @@ address {
   margin-bottom: 30px;
 
   width: 696px;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn {
@@ -168,7 +175,6 @@ address {
  
 .advantages-list{
   display: flex;
-  padding-left: 0px;
 }
 
 .advantages-tex{
@@ -201,11 +207,12 @@ margin-bottom: 50px;
 }
 
 .our-work-list{
-  padding-left: 0px;
   display: flex;
+  justify-content: space-between;
 }
 /* team */
 .team{
+  background-color: #F5F4FA;
   padding-bottom: 94px;
   padding-top: 94px;
 
@@ -213,7 +220,6 @@ margin-bottom: 50px;
 .team-title{
   color: #212121;
 text-align: center;
-font-family: Roboto;
 font-size: 36px;
 font-style: normal;
 font-weight: 700;
@@ -223,14 +229,13 @@ margin-bottom: 50px;
 }
 
 .team-list{
-  padding-left: 0px;
   display: flex;
+  justify-content: space-between;
 }
 
 .team-name{
   color: #212121;
 text-align: center;
-font-family: Roboto;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
@@ -242,7 +247,6 @@ margin-bottom: 10px;
 .team-text{
   color: #757575;
 text-align: center;
-font-family: Roboto;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -299,7 +303,11 @@ line-height: 30px; /* 187.5% */
 letter-spacing: 0.48px;
 }
 
-
+.prijekt-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
 
