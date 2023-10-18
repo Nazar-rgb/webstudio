@@ -304,12 +304,17 @@ letter-spacing: 0.48px;
 }
 
 .prijekt-list{
+  gap: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-
+img{
+  display: block;
+  width: 100%;
+height: auto;
+}
 
 
 
