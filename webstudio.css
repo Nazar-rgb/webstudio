@@ -179,7 +179,7 @@ address {
   gap: 30px;
 }
 .advantages-list > .item{
-  flex-basis: calc();
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .advantages-tex{
@@ -220,7 +220,7 @@ margin-bottom: 30px;
 }
 
 .our-work-list > .item{
-  flex-basis: calc((100%));
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 
