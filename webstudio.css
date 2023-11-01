@@ -332,14 +332,19 @@ letter-spacing: 0.48px;
   justify-content: center;
 }
 
-.prijekt-list > .item{
-  flex-basis: calc((100% - 30px) / 3);
+.prijekt-list > .item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 img{
   display: block;
   width: 100%;
 height: auto;
+}
+
+.menu-ite:hover,
+.menu-item:focus{
+  
 }
 
 
