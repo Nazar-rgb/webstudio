@@ -193,6 +193,26 @@ address {
     letter-spacing: 0.42px;
 }
 
+/* psewdo element before */
+.beefore{
+content: '';
+display: block;
+width: 70px;
+height: 70px;
+flex-shrink: 0;
+
+
+background-image: url(./Img/antenna\ 1.jpg);
+background-repeat: no-repeat;
+
+
+border-radius: 4px;
+background-color: white;
+
+padding: 25px 100px;
+
+
+}
 /* Чим ми займаємося */
 .our-work{
   padding-top: 94px;
