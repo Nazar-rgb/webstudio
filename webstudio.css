@@ -196,23 +196,51 @@ address {
 /* psewdo element before */
 .beefore{
 content: '';
+width: 270px;
+height: 120px;
 display: block;
-width: 70px;
-height: 70px;
 flex-shrink: 0;
 
 
-background-image: url(./Img/antenna\ 1.jpg);
 background-repeat: no-repeat;
-
+background-position: center;
 
 border-radius: 4px;
 background-color: white;
 
 padding: 25px 100px;
-
+margin-bottom: 30px;
 
 }
+
+.advantages-1{
+  background-image: url(./Img/antenna1.jpg);
+}
+
+.advantages-2{
+  background-image: url(./Img/clock1.jpg);
+}
+
+.advantages-3{
+   background-image: url(./Img/diagram1.jpg);
+}
+.advantages-4{
+  background-image: url(./Img/astronaut1.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Чим ми займаємося */
 .our-work{
   padding-top: 94px;
