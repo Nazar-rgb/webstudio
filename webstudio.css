@@ -206,7 +206,7 @@ background-repeat: no-repeat;
 background-position: center;
 
 border-radius: 4px;
-background-color: white;
+background-color: #F5F4FA;;
 
 padding: 25px 100px;
 margin-bottom: 30px;
@@ -214,15 +214,15 @@ margin-bottom: 30px;
 }
 
 .advantages-1{
-  background-image: url(./Img/antenna1.jpg);
+  background-image: url(./Img/antenna1.png);
 }
 
 .advantages-2{
-  background-image: url(./Img/clock1.jpg);
+  background-image: url(./Img/clock1.png);
 }
 
 .advantages-3{
-   background-image: url(./Img/diagram1.jpg);
+   background-image: url(./Img/diagram1.png);
 }
 .advantages-4{
   background-image: url(./Img/astronaut1.png);
