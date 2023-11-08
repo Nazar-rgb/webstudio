@@ -172,7 +172,18 @@ address {
 .advantages{
   padding-top: 94px;
 }
- 
+.adventage-title{
+  color: #212121;
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+} 
+
 .advantages-list{
   display: flex;
   flex-wrap: wrap;
