@@ -309,7 +309,16 @@ margin-bottom: 50px;
 }
 
 .team-list > .item{
+  padding-bottom: 30px;
   flex-basis: calc((100% - 90px) / 4);
+  background-color: #FFF;
+}
+
+.team-list>.item:hover,
+.team-list>.item:focus{
+  cursor: pointer;
+  border-radius: 0px 0px 4px 4px;
+   box-shadow:inset 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -348,7 +357,8 @@ justify-content: center;
 margin-bottom: 50px;
 }
 
-.portfolio-btn {
+
+.portfolio-btn{
   color: var(--blak-color);
   text-align: center;
   font-size: 16px;
@@ -361,6 +371,15 @@ border-radius: 4px;
   background-color: #F5F4FA;
   border: none;
   padding: 6px 22px;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus{
+  cursor: pointer;
+  border-radius: 4px;
+   background-color: #2196F3;
+    color: #FFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 
@@ -382,6 +401,15 @@ font-weight: 400;
 line-height: 30px; /* 187.5% */
 letter-spacing: 0.48px;
 }
+
+.prijekt-box:hover,
+.prijekt-box:focus{
+cursor: pointer;
+border: 1px solid #eee;
+background: #FFF
+
+}
+
 
 .prijekt-list{
   gap: 30px;
