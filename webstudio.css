@@ -345,11 +345,28 @@ line-height: normal;
 letter-spacing: 0.48px;
 }
 
+
+.social-list{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+
 /* regular custumers */
 .regular-customers{
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #fff;
+}
+
+.customers-h2{
+font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
 }
 
 
@@ -407,6 +424,10 @@ color: #FFF;
 .footer-cnt:not(:last-child){
   margin-bottom: 9px;
   display: block;
+}
+
+.footer-title{
+  
 }
 
 /* portfolio */
