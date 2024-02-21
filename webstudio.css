@@ -368,7 +368,10 @@ text-align: center;
 color: #212121;
 }
 
-
+.customers-list{
+  display: flex;
+  justify-content: center;
+}
 
 
 /* footer */
