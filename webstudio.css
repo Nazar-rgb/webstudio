@@ -60,6 +60,7 @@ address {
 
 .header > .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -71,7 +72,6 @@ address {
   line-height: normal;
   letter-spacing: 0.78px;
 
-  margin-right: 94px;
   padding-top: 25px;
   padding-bottom: 24px;
 }
@@ -111,8 +111,8 @@ address {
   color: #757575;
 }
 
-.header-addres:hover,
-.header-addres:focus{
+.header-cont:hover,
+.header-cont:focus{
 color: #2196f3;
 }
 
@@ -128,8 +128,9 @@ color: #2196f3;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-  margin-left: 300px;
 }
+
+
 
 .header-svg{
   margin-right: 10px;
@@ -412,6 +413,7 @@ color: #212121;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
   padding: 20px 62px;
+  margin-top: 40px;
 }
 
 .customers-list > .item:hover,
@@ -424,7 +426,7 @@ color: #212121;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+
 }
 
 .customer-svg{
