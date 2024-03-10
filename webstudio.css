@@ -508,12 +508,34 @@ color: #212121;
 }
 
 .footer-title {
+  display: flex;
+
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
 }
+
+
+
+.social-link-ft{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 100%;
+  border-radius: 50%;
+  fill: #FFF;
+  background-color: #757575;
+}
+
+.social-link-ft:hover,
+.social-link-ft:focus{
+  fill: #FFF;
+  background-color: var(--accent-color);
+}
+
 
 /* portfolio */
 
