@@ -121,6 +121,9 @@ address {
   position: relative;
   color: var(--accent-color);
 }
+
+
+
 .current::after{
   position: absolute;
   content:' ';
@@ -155,6 +158,9 @@ color: #2196f3;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-svg{
@@ -205,6 +211,10 @@ cursor: pointer;
 
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -366,6 +376,9 @@ margin-bottom: 50px;
   padding-bottom: 30px;
   flex-basis: calc((100% - 90px) / 4);
   background-color: #FFF;
+  transition-property: box-shadow ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-list>.item:hover,
@@ -420,6 +433,9 @@ letter-spacing: 0.48px;
   border-radius: 50%;
   fill: #AFB1B8;
   background-color: #FFF;
+  transition-property: fill color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -455,6 +471,9 @@ color: #212121;
   border: 1px solid #AFB1B8;
   padding: 20px 62px;
   margin-top: 40px;
+  transition-property: border-color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list > .item:hover,
@@ -472,6 +491,9 @@ color: #212121;
 
 .customer-svg{
   fill: #AFB1B8;
+  transition-property: fill ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-svg:hover,
@@ -499,9 +521,12 @@ color: #212121;
 
 .footer-logo-style {
   color: #fff;
+  transition-property: color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer.logo-sryle:hover,
+.footer.logo-style:hover,
 .footer-logo-style:focus{
   color: var(--accent-color);
 }
@@ -581,6 +606,9 @@ height: 44px;
   border-radius: 50%;
   fill: #FFF;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: fill color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-ft:hover,
@@ -621,6 +649,10 @@ padding: 15px 16px;
   gap: 10px;
   align-items: center;
   cursor: pointer;
+
+  transition-property: color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-btn:hover,
@@ -664,6 +696,10 @@ border-radius: 4px;
   background-color: #F5F4FA;
   border: none;
   padding: 6px 22px;
+
+  transition-property: box-shadow color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn:hover,
@@ -695,6 +731,10 @@ font-weight: 400;
 line-height: 30px; /* 187.5% */
 letter-spacing: 0.48px;
 padding-left: 24px;
+
+transition-property: border color ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .prijekt-box:hover,
@@ -703,6 +743,17 @@ cursor: pointer;
 border: 1px solid #eee;
 background: #FFF
 
+}
+.prijekt-list{
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  transition-property: box-shadow color border ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .prijekt-list > .item:hover,
@@ -716,12 +767,7 @@ background: #FFF
 
 }
 
-.prijekt-list{
-  gap: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 
 .prijekt-list > .item {
   flex-basis: calc((100% - 60px) / 3);
