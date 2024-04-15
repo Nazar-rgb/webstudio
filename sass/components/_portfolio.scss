@@ -1,0 +1,109 @@
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+    
+    .portfolio-btn-list{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+    }
+    
+    
+    .portfolio-btn{
+      color: var(--blak-color);
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.62;
+      letter-spacing: 0.48px;
+      
+      padding: 6px 22px;
+    border-radius: 4px;
+      background-color: #F5F4FA;
+      border: none;
+      padding: 6px 22px;
+    
+      transition-property: box-shadow color ;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .portfolio-btn:hover,
+    .portfolio-btn:focus{
+      cursor: pointer;
+      border-radius: 4px;
+       background-color: #2196F3;
+        color: #FFF;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    }
+    
+    
+    .portfolio-title{
+      color: #212121;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px; /* 200% */
+      letter-spacing: 1.08px;
+      margin-top: 20px;
+      padding-left: 24px;
+    }
+    
+    .portfolio-text{
+      color: #757575;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.48px;
+    padding-left: 24px;
+    
+    transition-property: border color ;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .prijekt-box:hover,
+    .prijekt-box:focus{
+    cursor: pointer;
+    border: 1px solid #eee;
+    background: #FFF
+    
+    }
+    .prijekt-list{
+      gap: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    
+      transition-property: box-shadow color border ;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      
+    }
+    
+    .prijekt-list > .item:hover,
+    .prijekt-list > .item:focus{
+      border: 1px solid #EEE;
+    
+      background: #FFF;
+      
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+      
+    
+    }
+    
+    
+    
+    .prijekt-list > .item {
+      flex-basis: calc((100% - 60px) / 3);
+    
+    }
+    
+    img{
+      display: block;
+      width: 100%;
+    height: auto;
+    }

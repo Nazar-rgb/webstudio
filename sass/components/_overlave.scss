@@ -1,0 +1,29 @@
+/* overlave */
+.prijekt-link:hover .overlavy{
+    transform: translateY(0);
+  }
+  
+  .overlavy-tumb{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .overlavy{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms;
+  }
+  
+  .overlavy-text{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 63px 24px;
+  }
