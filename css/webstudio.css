@@ -169,7 +169,7 @@ address {
 /* Герой */
 .hero {
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./Img/fon.png);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../Img/fon.png);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -186,30 +186,6 @@ address {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.hero__btn {
-  display: flex;
-  margin: 0px auto;
-  padding: 10px 32px;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero__btn:hover, .hero__btn:focus {
-  background-color: #188ce8;
 }
 
 /* adventages */
@@ -284,7 +260,7 @@ address {
   padding-bottom: 94px;
 }
 
-.our-work-title {
+.our-work__title {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -301,7 +277,7 @@ address {
   justify-content: space-between;
 }
 
-.our-work-list > .item {
+.our-work-list > .our-work-list__our-work {
   position: relative;
   flex-basis: calc((100% - 60px) / 3);
 }
@@ -317,7 +293,7 @@ address {
   justify-content: center;
 }
 
-.bg-title {
+.our-work__bg-title {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -944,4 +920,28 @@ img {
 .modal-submit:focus {
   background-color: #3d9ff0;
   cursor: pointer;
+}
+
+.hero__btn {
+  display: flex;
+  margin: 0px auto;
+  padding: 10px 32px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__btn:hover, .hero__btn:focus {
+  background-color: #188ce8;
 }/*# sourceMappingURL=webstudio.css.map */

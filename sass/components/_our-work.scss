@@ -4,7 +4,7 @@
     padding-bottom: 94px;
   }
   
-  .our-work-title{
+  .our-work__title{
     color: #212121;
   text-align: center;
   font-size: 36px;
@@ -24,7 +24,7 @@
   
   }
   
-  .our-work-list > .item{
+  .our-work-list > .our-work-list__our-work{
     position: relative;
     flex-basis: calc((100% - 60px) / 3);
   }
@@ -42,7 +42,7 @@
   justify-content: center;
   }
   
-  .bg-title{
+  .our-work__bg-title{
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
