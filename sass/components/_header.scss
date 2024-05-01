@@ -41,7 +41,7 @@
     padding-bottom: 32px;
   }
   
-  .menu-item:not(:last-child) {
+  .header__item:not(:last-child) {
     margin-right: 50px;
   }
   
@@ -55,12 +55,14 @@
     transition-property: color ;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
-  }
-  
-  .menu-link:hover,
-  .menu-link:focus{
+
+  &:hover,
+  &:focus{
     color: var(--accent-color);
   }
+  }
+  
+  
   
   .current{
     position: relative;

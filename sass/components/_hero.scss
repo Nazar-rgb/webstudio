@@ -6,7 +6,7 @@
     padding-bottom: 200px;
   }
   
-  .hero-title {
+  .hero__title {
     color: #fff;
     text-align: center;
     font-size: 44px;
@@ -23,7 +23,7 @@
     margin-right: auto;
   }
   
-  .hero-btn {
+  .hero__btn {
     display: flex;
     margin: 0px auto;
     padding: 10px 32px;
@@ -46,10 +46,13 @@
     transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .hero-btn:hover,
-  .hero-btn:focus{
+
+&:hover,
+&:focus{
     background-color: #188ce8;
   }
+  
+
+  }
+  
   
