@@ -84,10 +84,7 @@
 }
 
 .social-list-ft{
-  display: flex;
-  justify-content: start;
-  gap: 10px;
-  margin-top: 16px;
+ @include social-flex(start);
 }
 
 .social-list-ft > .item{
