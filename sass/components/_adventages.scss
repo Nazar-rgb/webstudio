@@ -2,7 +2,7 @@
 .advantages{
     padding-top: 94px;
   }
-  .adventage-title{
+  .adventage__title{
     color: #212121;
   
     font-size: 14px;
@@ -13,16 +13,16 @@
     text-transform: uppercase;
   } 
   
-  .advantages-list{
+  .advantages__list{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
-  .advantages-list > .item{
+  .advantages-list__item{
     flex-basis: calc((100% - 90px) / 4);
   }
   
-  .advantages-tex{
+  .advantages__text{
     margin-top: 10px;
   
     color: var(--basic-color);

@@ -30,7 +30,7 @@
 }
 
 
-.footer-list {
+.footer__list {
   padding-left: 0px;
 }
 
@@ -61,7 +61,7 @@
   display: block;
 }
 
-.footer-title {
+.footer__title {
   display: flex;
 
   font-weight: 700;
@@ -83,8 +83,8 @@
   justify-content: start;
 }
 
-.social-list-ft{
- @include social-flex(start);
+.social-list__ft{
+
 }
 
 .social-list-ft > .item{
@@ -117,7 +117,7 @@ display: flex;
 gap: 12px;
 }
 
-.footer-form-iput{
+.footer-form__iput{
   outline: none;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -128,7 +128,7 @@ background-color: rgba(33, 150, 243, 0);
 padding: 15px 16px;
 }
 
-.footer-form-btn{
+.footer-form__btn{
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;
@@ -159,6 +159,6 @@ padding: 15px 16px;
 border-color: #3d9ff0;
 }
 
-.footer-form-svg{
+.footer-form__svg{
   fill: #ececec;
 }

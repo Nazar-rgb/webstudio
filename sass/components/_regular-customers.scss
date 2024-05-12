@@ -4,7 +4,7 @@
     padding-bottom: 94px;
   }
   
-  .customers-h2{
+  .customers__h2{
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -36,14 +36,14 @@
     border-color: var(--accent-color);
   }
   
-  .customers-link{
+  .customers__link{
     display: flex;
     justify-content: center;
     align-items: center;
   
   }
   
-  .customer-svg{
+  .customer__svg{
     fill: #AFB1B8;
     transition-property: fill ;
     transition-duration: 250ms;
