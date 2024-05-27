@@ -47,11 +47,26 @@ address {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .header {
@@ -61,40 +76,80 @@ address {
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 100%;
+}
+@media screen and (min-width: 480px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 30px;
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
 }
 
 .header > .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  padding-top: 25px;
-  padding-bottom: 24px;
+}
+@media screen and (min-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
 }
 
 .logo-sryle {
   color: #000;
 }
 
-.menu-list {
-  display: flex;
-  padding-left: 0px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+@media screen and (min-width: 480px) {
+  .menu-list {
+    display: none;
+  }
 }
-
-.header__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .menu-list {
+    display: flex;
+    margin-left: 0px;
+    gap: 54px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-list {
+    display: flex;
+    margin-left: 0px;
+    gap: 50px;
+  }
 }
 
 .menu-link {
@@ -134,19 +189,26 @@ address {
   transform: scaleX(1);
 }
 
-.header-addres {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: #757575;
+@media screen and (min-width: 480px) {
+  .header-addres {
+    display: none;
+  }
 }
-
-.header-cont:hover,
-.header-cont:focus {
+@media screen and (min-width: 768px) {
+  .header-addres {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-addres {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+.header-addres:hover, .header-addres:focus {
   color: #2196f3;
-}
-
-.header-cont:not(:last-child) {
-  margin-right: 50px;
 }
 
 .header-cont {
@@ -168,31 +230,68 @@ address {
 
 /* Герой */
 .hero {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../web-studia/hero.png);
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../Img/fon.png);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    max-width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
-.hero__title {
+.hero__hero-title {
   color: #fff;
   text-align: center;
-  font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
-  margin-bottom: 30px;
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
 }
-
-/* adventages */
-.advantages {
-  padding-top: 94px;
+@media screen and (min-width: 480px) {
+  .hero__hero-title {
+    width: 360px;
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__hero-title {
+    width: 307px;
+    font-size: 22px;
+    margin-bottom: 37px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__hero-title {
+    width: 696px;
+    font-size: 44px;
+    margin-bottom: 30px;
+  }
 }
 
+/* adventages */
 .adventage__title {
   color: #212121;
   font-size: 14px;
@@ -202,6 +301,21 @@ address {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+@media screen and (min-width: 480px) {
+  .adventage__title {
+    margin-bottom: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .adventage__title {
+    margin-bottom: 17px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adventage__title {
+    margin-bottom: 10px;
+  }
+}
 
 .advantages__list {
   display: flex;
@@ -209,8 +323,20 @@ address {
   gap: 30px;
 }
 
-.advantages-list__item {
-  flex-basis: calc((100% - 90px) / 4);
+@media screen and (min-width: 480px) {
+  .advantages-list > .advantages-list__item {
+    flex-basis: calc((100% - 30px) / 1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages-list > .advantages-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-list > .advantages-list__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .advantages__text {
@@ -236,6 +362,21 @@ address {
   background-color: #F5F4FA;
   padding: 25px 100px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .beefore {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .beefore {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .beefore {
+    max-width: 1200px;
+  }
 }
 
 .advantages-1 {
@@ -915,10 +1056,9 @@ img {
   cursor: pointer;
 }
 
-.hero__btn {
+.hero__hero-btn {
   display: flex;
   margin: 0px auto;
-  padding: 10px 32px;
   color: #fff;
   text-align: center;
   font-size: 16px;
@@ -935,6 +1075,21 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero__btn:hover, .hero__btn:focus {
+@media screen and (min-width: 480px) {
+  .hero__hero-btn {
+    padding: 10px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__hero-btn {
+    padding: 18px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__hero-btn {
+    padding: 10px 24px;
+  }
+}
+.hero__hero-btn:hover, .hero__hero-btn:focus {
   background-color: #188ce8;
 }/*# sourceMappingURL=webstudio.css.map */
