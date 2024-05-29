@@ -1,7 +1,19 @@
 /* Чим ми займаємося */
 .our-work{
-    padding-top: 94px;
+   
+    @media screen and (min-width: 480px) {
+      display: none;
+    }
+  
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      display: block;
+       padding-top: 94px;
     padding-bottom: 94px;
+    }
   }
   
   .our-work__title{
@@ -17,14 +29,14 @@
   margin-bottom: 30px;
   }
   
-  .our-work__list{
+  .our-work-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   
   }
   
-  .our-work-list > .our-work-list__our-work{
+  .our-work-list > .our-work-list__item{
     position: relative;
     flex-basis: calc((100% - 60px) / 3);
   }

@@ -1,6 +1,16 @@
 /* adventages */
 .advantages{
-    
+  @media screen and (min-width: 480px) {
+  padding-top: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
   }
   .adventage__title{
     color: #212121;
@@ -25,7 +35,7 @@
     }
   } 
   
-  .advantages__list{
+  .advantages-list{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;

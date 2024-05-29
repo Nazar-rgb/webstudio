@@ -46,6 +46,12 @@ address {
   overflow: hidden;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -184,6 +190,16 @@ address {
   transform: scaleX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .current::after {
+    bottom: -45px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .current::after {
+    bottom: -30px;
+  }
+}
 
 .current:hover::after {
   transform: scaleX(1);
@@ -230,7 +246,7 @@ address {
 
 /* Герой */
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../web-studia/hero.png);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../Img/fon.png);
   background-color: #2f303a;
   background-repeat: no-repeat;
   margin-left: auto;
@@ -259,7 +275,7 @@ address {
   }
 }
 
-.hero__hero-title {
+.hero__title {
   color: #fff;
   text-align: center;
   font-weight: 900;
@@ -270,21 +286,21 @@ address {
   margin-right: auto;
 }
 @media screen and (min-width: 480px) {
-  .hero__hero-title {
+  .hero__title {
     width: 360px;
     font-size: 26px;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__hero-title {
+  .hero__title {
     width: 307px;
     font-size: 22px;
     margin-bottom: 37px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__hero-title {
+  .hero__title {
     width: 696px;
     font-size: 44px;
     margin-bottom: 30px;
@@ -292,6 +308,22 @@ address {
 }
 
 /* adventages */
+@media screen and (min-width: 480px) {
+  .advantages {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+  }
+}
+
 .adventage__title {
   color: #212121;
   font-size: 14px;
@@ -317,7 +349,7 @@ address {
   }
 }
 
-.advantages__list {
+.advantages-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -352,7 +384,6 @@ address {
 /* psewdo element before */
 .beefore {
   content: "";
-  width: 270px;
   height: 120px;
   display: block;
   flex-shrink: 0;
@@ -365,40 +396,53 @@ address {
 }
 @media screen and (min-width: 480px) {
   .beefore {
-    max-width: 480px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .beefore {
-    max-width: 768px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .beefore {
-    max-width: 1200px;
+    width: 270px;
   }
 }
 
 .advantages-1 {
-  background-image: url(./Img/antenna1.png);
+  background-image: url(../../Img/antenna1.png);
 }
 
 .advantages-2 {
-  background-image: url(./Img/clock1.png);
+  background-image: url(../../Img/clock1.png);
 }
 
 .advantages-3 {
-  background-image: url(./Img/diagram1.png);
+  background-image: url(../../Img/diagram1.png);
 }
 
 .advantages-4 {
-  background-image: url(./Img/astronaut1.png);
+  background-image: url(../../Img/astronaut1.png);
 }
 
 /* Чим ми займаємося */
-.our-work {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .our-work {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-work {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-work {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-work__title {
@@ -412,13 +456,13 @@ address {
   margin-bottom: 30px;
 }
 
-.our-work__list {
+.our-work-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.our-work-list > .our-work-list__our-work {
+.our-work-list > .our-work-list__item {
   position: relative;
   flex-basis: calc((100% - 60px) / 3);
 }
@@ -446,39 +490,83 @@ address {
 /* team */
 .team {
   background-color: #F5F4FA;
-  padding-bottom: 94px;
-  padding-top: 94px;
+}
+@media screen and (min-width: 480px) {
+  .team {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .team__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .team__title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
 }
 
 .team__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
 
 .team-list > .item {
   padding-bottom: 30px;
-  flex-basis: calc((100% - 90px) / 4);
   background-color: #FFF;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team-list > .item:hover,
-.team-list > .item:focus {
+@media screen and (min-width: 480px) {
+  .team-list > .item {
+    flex-basis: calc((100% - 30px) / 1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list > .item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list > .item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+.team-list > .item > .item:hover, .team-list > .item > .item:focus {
   cursor: pointer;
   border-radius: 0px 0px 4px 4px;
   box-shadow: inset 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -539,35 +627,71 @@ address {
 }
 
 /* regular custumers */
-.regular-customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .regular-customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .regular-customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .regular-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .customers__h2 {
   font-weight: 700;
-  font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+}
+@media screen and (min-width: 480px) {
+  .customers__h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers__h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .customers-list {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
-.customers-list > .item {
-  width: 170;
-  height: 92px;
-  border-radius: 4px;
-  border: 1px solid #AFB1B8;
-  padding: 20px 62px;
-  margin-top: 40px;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) {
+  .customers-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers-list__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers-list__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .customers-list > .item:hover,
@@ -1056,7 +1180,7 @@ img {
   cursor: pointer;
 }
 
-.hero__hero-btn {
+.hero__btn {
   display: flex;
   margin: 0px auto;
   color: #fff;
@@ -1076,20 +1200,20 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 480px) {
-  .hero__hero-btn {
+  .hero__btn {
     padding: 10px 24px;
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__hero-btn {
+  .hero__btn {
     padding: 18px 24px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__hero-btn {
+  .hero__btn {
     padding: 10px 24px;
   }
 }
-.hero__hero-btn:hover, .hero__hero-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: #188ce8;
 }/*# sourceMappingURL=webstudio.css.map */

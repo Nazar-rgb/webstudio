@@ -1,7 +1,7 @@
 /* psewdo element before */
 .beefore{
     content: '';
-    width: 270px;
+    
     height: 120px;
     display: block;
     flex-shrink: 0;
@@ -17,29 +17,29 @@
     margin-bottom: 30px;
     
     @media screen and (min-width: 480px) {
-      w
+      width: 450px;
     }
   
     @media screen and (min-width: 768px) {
-    
+    width: 354px;
     }
   
     @media screen and (min-width: 1200px) {
-    
+    width: 270px;
     }
     }
     
     .advantages-1{
-      background-image: url(./Img/antenna1.png);
+      background-image: url(../../Img/antenna1.png);
     }
     
     .advantages-2{
-      background-image: url(./Img/clock1.png);
+      background-image: url(../../Img/clock1.png);
     }
     
     .advantages-3{
-       background-image: url(./Img/diagram1.png);
+       background-image: url(../../Img/diagram1.png);
     }
     .advantages-4{
-      background-image: url(./Img/astronaut1.png);
+      background-image: url(../../Img/astronaut1.png);
     }
