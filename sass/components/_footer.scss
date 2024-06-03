@@ -55,6 +55,10 @@
 
 .footer__list {
   padding-left: 0px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .address {
@@ -94,7 +98,10 @@
   color: #fff;
 
   margin-bottom: 20px;
-
+text-align: center;
+  @media screen and (min-width: 1200px) {
+ text-align: start;
+  }
 }
 
 .widhet-block{
@@ -107,9 +114,12 @@
 }
 
 
-.social-list__ft{
-
-}
+.social-list--footer {
+  @include social-flex(center);
+  @media screen and (min-width: 1200px) {
+  @include social-flex(start);
+  }
+  }
 
 .social-list-ft > .item{
 width: 44px;
