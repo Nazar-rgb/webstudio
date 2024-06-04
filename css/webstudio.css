@@ -840,6 +840,7 @@ img {
   justify-content: center;
   gap: 10px;
   margin-top: 16px;
+  margin-top: 0px;
 }
 @media screen and (min-width: 1200px) {
   .social-list--footer {
@@ -879,16 +880,38 @@ img {
   display: flex;
   gap: 12px;
 }
+@media screen and (min-width: 480px) {
+  .footer-form {
+    display: ruby;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+    gap: 12px;
+  }
+}
 
 .footer-form__iput {
   outline: none;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  width: 358px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: rgba(33, 150, 243, 0);
   padding: 15px 16px;
+}
+@media screen and (min-width: 480px) {
+  .footer-form__iput {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__iput {
+    width: 358px;
+    margin-bottom: 0px;
+  }
 }
 
 .footer-form__btn {
