@@ -1,10 +1,6 @@
 /* Герой */
 .hero {
-  background-image: linear-gradient(
-  rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)
-  ),
-  url(../../Img/fon.png);
+  
   background-color: #2f303a;
   background-repeat: no-repeat;
   margin-left: auto;
@@ -41,6 +37,20 @@
   margin-right: auto;
   
   @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)
+  ),
+  url(../../Img/mobile/header@1x-mobile.png);
+
+  @media (-webkit-min-device-retio:2), (min-resolution:192dpi) {
+    background-image: linear-gradient(
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)
+  ),
+  url(../../Img/mobile/header@2x-mobile.png);
+
+  }
   width: 360px;
   font-size: 26px;
   margin-bottom: 30px;
