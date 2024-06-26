@@ -20,8 +20,23 @@
 .portfolio-btn-list {
   display: flex;
   gap: 8px;
-  justify-content: center;
+  
   margin-bottom: 50px;
+  
+  @media screen and (min-width: 480px) {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+   justify-content: center;
+   flex-wrap: nowrap;
+  }
 }
 
 .portfolio-btn {
@@ -41,6 +56,8 @@
   transition-property: box-shadow color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+ 
 }
 
 .portfolio-btn:hover,

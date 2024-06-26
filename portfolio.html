@@ -40,8 +40,32 @@
                     </svg>
                     +38 096 111 11 11</a>
             </address>
+        
+        <button class="button-mobile" data-menu-button>
+            <svg class="icon-mobile" aria-label="Переключатель меню">
+                <use class="icon-menu" href="./Img/symbol-defs.svg#icon-menu"></use>
+                <use class="icon-close" href="./Img/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
         </div>
     </header>
+    <div class="mobile-menu" data-menu>
+        <ul class="mobile-list-menu">
+            <li class="mobile-list-menu__item"><a href="./index.html" class="mobile-link">Студія</a></li>
+            <li class="mobile-list-menu__item"><a href="./portfolio.html" class="mobile-link">Портфоліо</a></li>
+            <li class="mobile-list-menu__item"><a href="" class="mobile-link">Контакти</a></li>
+        </ul>
+        <ul class="mobile-list-adres">
+          <li class="item"><a href="tell:+380961111111" target="_blank" class="mobile-mail">+38 096 111 11 11</a></li>
+      <li class="item"><a href="mail:info@devstudio.com" target="_blank" class="mobile-mail">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-kontakts">
+          <li class="item"><a href="" class="kontakts">Instagram</a></li>
+          <li class="item"><a href="" class="kontakts">Twitter</a></li>
+          <li class="item"><a href="" class="kontakts">Facebook</a></li>
+          <li class="item"><a href="" class="kontakts">LinkedIn</a></li>
+        </ul>
+      </div>
 
     <main>
         <div class="container">
@@ -63,7 +87,14 @@
                         <div class="overlavy">
                             <p class="overlavy-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
-                        <img src="./Img/img (7).jpg" alt="Технокряк" width="370"></div>
+                        <picture>
+                            <source srcset="./img/mobile/portfolio1@1x-mobile.jpg 1x, ./img/mobile/portfolio1@2x-mobile.jpg 2x " media="(max-width:480px)" type="image/webp">
+                            <source srcset="./img/tablet/portfolio1@1x-tablet.jpg 1x, ./img/tablet/portfolio1@2x-tablet.jpg 2x" media="(max-width:768px)" type="image/webp">
+                            <source srcset="./img/dekstop/portfolio1@1x-dekstop.jpg 1x, ./img/dekstop/portfolio1@2x-dekstop.jpg 2x" media="(max-width:1200x)" type="image/webp"> 
+
+                                  <img src="./Img/dekstop/portfolio1@1x-dekstop.jpg" alt="Технокряк" width="370">       
+                          </picture>
+                       </div>
                        
                     <h3 class="portfolio-title">Технокряк</h3>
                     <p class="portfolio-text">Технокряк</p>
@@ -75,7 +106,15 @@
                           <div class="overlavy">
                               <p class="overlavy-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                           </div>
-                          <img src="./Img/img (8).jpg" alt="Технокряк" width="370"></div>
+
+                          <picture>
+                            <source srcset="./img/mobile/portfolio2@1x-mobile.jpg 1x, ./img/mobile/portfolio2@2x-mobile.jpg 2x " media="(max-width:480px)" type="image/webp">
+                            <source srcset="./img/tablet/portfolio2@1x-tablet.jpg 1x, ./img/tablet/portfolio2@2x-tablet.jpg 2x" media="(max-width:768px)" type="image/webp">
+                            <source srcset="./img/dekstop/portfolio2@1x-dekstop.jpg 1x, ./img/dekstop/portfolio2@2x-dekstop.jpg 2x" media="(max-width:1200x)" type="image/webp"> 
+
+                                  <img src="./Img/dekstop/portfolio2@1x-dekstop.jpg" alt="Технокряк" width="370">       
+                          </picture>
+                        </div>
                          
                       <h3 class="portfolio-title">Постер New Orlean vs Golden Star</h3>
                       <p class="portfolio-text">Дизайн</p>
@@ -87,7 +126,14 @@
                           <div class="overlavy">
                               <p class="overlavy-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                           </div>
-                          <img src="./Img/img (9).jpg" alt="Технокряк" width="370"></div>
+                          <picture>
+                            <source srcset="./img/mobile/portfolio3@1x-mobile.jpg 1x, ./img/mobile/portfolio3@2x-mobile.jpg 2x " media="(max-width:480px)" type="image/webp">
+                            <source srcset="./img/tablet/portfolio3@1x-tablet.jpg 1x, ./img/tablet/portfolio3@2x-tablet.jpg 2x" media="(max-width:768px)" type="image/webp">
+                            <source srcset="./img/dekstop/portfolio3@1x-dekstop.jpg 1x, ./img/dekstop/portfolio3@2x-dekstop.jpg 2x" media="(max-width:1200x)" type="image/webp"> 
+
+                                  <img src="./Img/dekstop/portfolio3@1x-dekstop.jpg" alt="Технокряк" width="370">       
+                          </picture>
+                        </div>
                          
                       <h3 class="portfolio-title">Ресторан Seafood</h3>
                       <p class="portfolio-text">Додаток</p>
@@ -99,7 +145,14 @@
                           <div class="overlavy">
                               <p class="overlavy-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                           </div>
-                          <img src="./Img/img (10).jpg" alt="Технокряк" width="370"></div>
+                          <picture>
+                            <source srcset="./Img/mobile/portfolio4@1x-mobile.jpg 1x, ./Img/mobile/portfolio4@2x-mobile.jpg 2x " media="(max-width:480px)" type="image/webp">
+                            <source srcset="./Img/tablet/portfolio4@1x-tablet.jpg 1x, ./Img/tablet/portfolio4@2x-tablet.jpg 2x" media="(max-width:768px)" type="image/webp">
+                            <source srcset="./Img/dekstop/portfolio4@1x-dekstop.jpg 1x, ./Img/dekstop/portfolio4@2x-dekstop.jpg 2x" media="(max-width:1200x)" type="image/webp"> 
+
+                                  <img src="./Img/dekstop/portfolio4@1x-dekstop.jpg" alt="Технокряк" width="370">       
+                          </picture>
+                        </div>
                          
                       <h3 class="portfolio-title">Проєкт Prime</h3>
                       <p class="portfolio-text">Маркетинг</p>
@@ -111,7 +164,14 @@
                           <div class="overlavy">
                               <p class="overlavy-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                           </div>
-                          <img src="./Img/img (11).jpg" alt="Технокряк" width="370"></div>
+                          <picture>
+                            <source srcset="./img/mobile/portfolio5@1x-mobile.jpg 1x, ./img/mobile/portfolio5@2x-mobile.jpg 2x " media="(max-width:480px)" type="image/webp">
+                            <source srcset="./img/tablet/portfolio5@1x-tablet.jpg 1x, ./img/tablet/portfolio5@2x-tablet.jpg 2x" media="(max-width:768px)" type="image/webp">
+                            <source srcset="./img/dekstop/portfolio5@1x-dekstop.jpg 1x, ./img/dekstop/portfolio5@2x-dekstop.jpg 2x" media="(max-width:1200x)" type="image/webp"> 
+
+                                  <img src="./Img/dekstop/portfolio5@1x-dekstop.jpg" alt="Технокряк" width="370">       
+                          </picture>
+                        </div>
                          
                       <h3 class="portfolio-title">Проєкт Boxes</h3>
                       <p class="portfolio-text">Додаток</p>
@@ -123,7 +183,14 @@
                           <div class="overlavy">
                               <p class="overlavy-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                           </div>
-                          <img src="./Img/img (15).jpg" alt="Технокряк" width="370"></div>
+                          <picture>
+                            <source srcset="./img/mobile/portfolio6@1x-mobile.jpg 1x, ./img/mobile/portfolio6@2x-mobile.jpg 2x " media="(max-width:480px)" type="image/webp">
+                            <source srcset="./img/tablet/portfolio6@1x-tablet.jpg 1x, ./img/tablet/portfolio6@2x-tablet.jpg 2x" media="(max-width:768px)" type="image/webp">
+                            <source srcset="./img/dekstop/portfolio6@1x-dekstop.jpg 1x, ./img/dekstop/portfolio6@2x-dekstop.jpg 2x" media="(max-width:1200x)" type="image/webp"> 
+
+                                  <img src="./Img/dekstop/portfolio6@1x-dekstop.jpg" alt="Технокряк" width="370">       
+                          </picture>
+                        </div>
                          
                       <h3 class="portfolio-title">Inspiration has no Borders</h3>
                       <p class="portfolio-text">Веб-сайт</p>
@@ -135,7 +202,13 @@
                           <div class="overlavy">
                               <p class="overlavy-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                           </div>
-                          <img src="./Img/img (12).jpg" alt="Технокряк" width="370"></div>
+                          <picture>
+                            <source srcset="./img/mobile/portfolio7@1x-mobile.jpg 1x, ./img/mobile/portfolio7@2x-mobile.jpg 2x " media="(max-width:480px)" type="image/webp">
+                            <source srcset="./img/tablet/portfolio7@1x-tablet.jpg 1x, ./img/tablet/portfolio7@2x-tablet.jpg 2x" media="(max-width:768px)" type="image/webp">
+                            <source srcset="./img/dekstop/portfolio7@1x-dekstop.jpg 1x, ./img/dekstop/portfolio7@2x-dekstop.jpg 2x" media="(max-width:1200x)" type="image/webp"> 
+
+                                  <img src="./Img/dekstop/portfolio7@1x-dekstop.jpg" alt="Технокряк" width="370">       
+                          </picture></div>
                          
                       <h3 class="portfolio-title">Видання Limited Edition</h3>
                       <p class="portfolio-text">Дизайн</p>
@@ -147,7 +220,13 @@
                           <div class="overlavy">
                               <p class="overlavy-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                           </div>
-                          <img src="./Img/img (13).jpg" alt="Технокряк" width="370"></div>
+                          <picture>
+                            <source srcset="./img/mobile/portfolio8@1x-mobile.jpg 1x, ./img/mobile/portfolio8@2x-mobile.jpg 2x " media="(max-width:480px)" type="image/webp">
+                            <source srcset="./img/tablet/portfolio8@1x-tablet.jpg 1x, ./img/tablet/portfolio8@2x-tablet.jpg 2x" media="(max-width:768px)" type="image/webp">
+                            <source srcset="./img/dekstop/portfolio8@1x-dekstop.jpg 1x, ./img/dekstop/portfolio8@2x-dekstop.jpg 2x" media="(max-width:1200x)" type="image/webp"> 
+
+                                  <img src="./Img/dekstop/portfolio8@1x-dekstop.jpg" alt="Технокряк" width="370">       
+                          </picture></div>
                          
                       <h3 class="portfolio-title">Проєкт LAB</h3>
                       <p class="portfolio-text">Маркетинг</p>
@@ -159,7 +238,13 @@
                           <div class="overlavy">
                               <p class="overlavy-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                           </div>
-                          <img src="./Img/img (14).jpg" alt="Технокряк" width="370"></div>
+                          <picture>
+                            <source srcset="./img/mobile/portfolio9@1x-mobile.jpg 1x, ./img/mobile/portfolio9@2x-mobile.jpg 2x " media="(max-width:480px)" type="image/webp">
+                            <source srcset="./img/tablet/portfolio9@1x-tablet.jpg 1x, ./img/tablet/portfolio9@2x-tablet.jpg 2x" media="(max-width:768px)" type="image/webp">
+                            <source srcset="./img/dekstop/portfolio9@1x-dekstop.jpg 1x, ./img/dekstop/portfolio9@2x-dekstop.jpg 2x" media="(max-width:1200x)" type="image/webp"> 
+
+                                  <img src="./Img/dekstop/portfolio9@1x-dekstop.jpg" alt="Технокряк" width="370">       
+                          </picture></div>
                          
                       <h3 class="portfolio-title">Growing Business</h3>
                       <p class="portfolio-text">Додаток</p>
@@ -174,12 +259,12 @@
     <!-- Footer -->
 
 
-    <footer class="footer" id="cont">
+    <footer class="footer" id="cont"> 
         <div class="container">
             <div class="widhet-block">
                 <a href="" class="footer-logo">Web<span class="footer-logo-style">Studio</span></a>
                 <address>
-                    <ul class="footer-list">
+                    <ul class="footer__list">
                         <li><a href="https://goo.gl/maps/dQ1mNMhz1SSXz6Sy8" target="_blank" class="address">м. Київ пр-т
                                 Лесі Українки,
                                 26</a>
@@ -190,14 +275,9 @@
                 </address>
             </div>
             <div class="widhet-block">
-                <h2 class="footer-title">Приєднуйтесь</h2>
-              
-
-
-
-
-
-                <ul class="social-list-ft">
+                <h2 class="footer__title">Приєднуйтесь</h2> 
+    <!--social-list -->
+     <ul class="social-list--footer team__list"> 
                     <li class="item">
 <a href="" class="social-link-ft">
                         <svg class="social-svg" width="20" height="20">
@@ -232,11 +312,11 @@
 
 
             <div class="widhet-block">
-<h2 class="footer-title">Пдпишітся на розсилку</h2>
+<h2 class="footer__title">Пдпишітся на розсилку</h2>
 <form class="footer-form">
-<input type="email" placeholder="E-mail" class="footer-form-iput">
-<button type="button" class="footer-form-btn" >Підписатися
-<svg width="24" height="24" class="footer-form-svg">
+<input type="email" placeholder="E-mail" class="footer-form__iput">
+<button type="button" class="footer-form__btn" >Підписатися
+<svg width="24" height="24" class="footer-form__svg">
     <use href="./Img/symbol-defs.svg#icon-iconsend"></use>
 </svg>
 </button>
@@ -246,7 +326,7 @@
 
 
         </div>
-    </footer>
+    </footer> 
     <!-- modal -->
 
  <div class="backdrop is-hidden" data-modal>
@@ -300,5 +380,8 @@
     </div>
 </div>
 
-    <script src="./js/index.js" type="module"></script>
+    
     </footer>
+    <script src="./js/mobile-menu.js" type="module"></script>
+</body>
+</html>
